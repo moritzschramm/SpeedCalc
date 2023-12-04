@@ -13,3 +13,16 @@ cargo build
 ```
 cargo run   # use -r to run in release mode
 ```
+
+# Desktop
+There is also a desktop application provided by tauri. Make sure that the tauri CLI is installed and the server is running (see above).
+## Running the desktop application
+```
+cd client
+cargo tauri dev
+```
+## Building a desktop app
+```
+cd client
+cargo tauri build
+```

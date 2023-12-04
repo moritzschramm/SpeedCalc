@@ -11,7 +11,7 @@ const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 const result = ref<number | undefined>()
 const resultFeedback = ref<boolean | undefined>()
 
-let calcTask = new CalcTask(`ws://${window.location.host}/calc-task-ws`)
+let calcTask = new CalcTask(`ws://localhost:8000/calc-task-ws`)   // ${window.location.host}
 
 function numberInput(inputNum: number) {
   if (!result.value) {
